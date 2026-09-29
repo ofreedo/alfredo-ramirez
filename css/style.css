@@ -160,7 +160,7 @@ h1,h2,h3{font-weight:400}
 .contact-grid{display:grid;grid-template-columns:2fr 1fr;gap:48px;align-items:end}
 .h2.xl{font-size:clamp(44px,6vw,88px);line-height:1;max-width:14ch}
 .email-row{display:flex;align-items:center;flex-wrap:wrap;gap:16px;margin-top:36px}
-.email{font:800 clamp(22px,2.6vw,34px)/1.15 var(--serif);font-variant-numeric:lining-nums;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere}
+.email{font:800 clamp(17px,5.2vw,34px)/1.15 var(--serif);font-variant-numeric:lining-nums;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere}
 .email:hover{color:var(--accent-lt)}
 .copy{font:700 13px/1 var(--sans);letter-spacing:.03em;padding:9px 16px;border-radius:999px;border:1px solid #55534C;background:transparent;color:var(--paper);cursor:pointer}
 .copy:hover{border-color:var(--paper)}
