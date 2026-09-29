@@ -9,12 +9,10 @@
 <meta name="theme-color" content="#F4F0E8">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Alfredo Ramirez · A.R. Consulting">
-<meta property="og:description" content="I design, build, and grow websites for businesses.">
+<meta property="og:description" content="Websites for cafés, spas, painters, contractors, and paleterías, from one person in Napa, California.">
 <meta property="og:url" content="https://arconsultingwebsites.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,500&display=swap">
+<link rel="preload" href="fonts/migra/Migra-Extrabold.otf" as="font" type="font/otf" crossorigin>
 <link rel="preload" href="fonts/GlacialIndifference-Regular.otf" as="font" type="font/otf" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 <script>document.documentElement.classList.add('js')</script>
@@ -36,9 +34,9 @@
 <main id="main">
 <section class="hero wrap" id="top">
   <div class="hero-copy">
-    <p class="eyebrow"><span class="rule"></span>Alfredo Ramirez · Napa, California</p>
-    <h1 class="headline">I design, build, and <em>grow</em> websites for businesses.</h1>
-    <p class="sub">A.R. Consulting is a one-person studio. Design, copy, search, ads, and upkeep all come from the same person, so nothing gets lost between agencies.</p>
+    <div class="sec-top"><a class="path" href="#top"><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="5.5" width="7" height="5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg>arconsultingwebsites.com</a></div>
+    <h1 class="headline">Websites for <a href="#momos" title="Momo's Café, Vallejo">cafés</a>, <a href="#painted-lady" title="The Painted Lady, Napa">spas</a>, <a href="#primeline" title="PrimeLine Painting, San Diego">painters</a>, <a href="#jxr" title="JXR Constructors, San Diego">contractors</a>, and <a href="#los-freseros" title="Paletería Los Freseros, Ben Lomond">paleterías</a>.</h1>
+    <p class="sub">I'm Alfredo Ramirez. A.R. Consulting is my one-person studio in Napa, California: design, copy, search, ads, and upkeep, all from me.</p>
     <div class="actions">
       <a class="btn" href="mailto:aram831@gmail.com?subject=Website%20project">Start a project <svg class="arr" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       <a class="btn ghost" href="#work">See the work</a>
@@ -58,13 +56,16 @@
 
 <section class="section" id="services">
   <div class="wrap">
-    <div class="sec-head split" data-reveal>
-      <div><p class="label">Services</p><h2 class="h2">Make it. Grow it. <em>Keep it running.</em></h2></div>
-      <p class="intro">Everything a small business needs from its website, handled by one person you can reach directly.</p>
+    <div class="sec-head" data-reveal>
+      <div class="sec-top"><a class="path" href="#services"><span class="dom">arconsultingwebsites.com</span><b>/</b>services</a></div>
+      <div class="split">
+        <h2 class="h2">Six services, and you only deal with me.</h2>
+        <p class="intro">Hire me for one piece or all six.</p>
+      </div>
     </div>
     <div class="groups">
       <article class="group" data-reveal>
-        <p class="group-tag">01 · Make</p>
+        <p class="group-tag">Make it</p>
         <h3>Web design &amp; development</h3>
         <p>A fast, mobile-first site built around your business: what you offer, when you're open, and one clear way to call, order, or book.</p>
         <h3>Graphic design</h3>
@@ -73,14 +74,14 @@
         <p>Clear, plain words written from your real details, so customers understand what you do in seconds.</p>
       </article>
       <article class="group" data-reveal>
-        <p class="group-tag">02 · Grow</p>
+        <p class="group-tag">Grow it</p>
         <h3>Search engine optimization</h3>
         <p>Search-friendly pages, Google Search Console, and local search basics, so people nearby find you when they look.</p>
         <h3>Google Ads</h3>
         <p>Search ad campaigns set up and tuned so your budget reaches people already looking for what you sell.</p>
       </article>
       <article class="group dark" data-reveal>
-        <p class="group-tag">03 · Manage</p>
+        <p class="group-tag">Keep it running</p>
         <h3>Website care</h3>
         <p>New prices, holiday hours, fresh photos, fixes, and your domain and hosting kept in order. Send a note and it gets done.</p>
         <a class="btn light" href="mailto:aram831@gmail.com?subject=Website%20care">Ask about care <svg class="arr" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
@@ -92,11 +93,11 @@
 <section class="section alt" id="work">
   <div class="wrap">
     <div class="sec-head" data-reveal>
-      <p class="label">Recent work</p>
-      <h2 class="h2">Live on the <em>web.</em></h2>
+      <div class="sec-top"><a class="path" href="#work"><span class="dom">arconsultingwebsites.com</span><b>/</b>work</a></div>
+      <h2 class="h2">Five live sites, from Napa to San Diego.</h2>
     </div>
     <div class="cases">
-      <article class="case" data-reveal>
+      <article class="case" id="painted-lady" data-reveal>
         <a class="frame" href="https://www.thepaintedladynapavalley.com" target="_blank" rel="noopener">
           <span class="mock-bar"><span class="dots"><i></i><i></i><i></i></span><span class="mock-url">thepaintedladynapavalley.com</span></span>
           <img src="assets/work/painted-lady.jpg" srcset="assets/work/painted-lady-800.jpg 800w, assets/work/painted-lady.jpg 1440w" sizes="(max-width: 900px) 92vw, 560px" width="1440" height="900" loading="lazy" alt="Homepage of The Painted Lady Tanning &amp; Spa: a magazine-style masthead above a team photo">
@@ -106,7 +107,7 @@
         <p>A magazine-style redesign with the full service and price list, team pages, and a shop page that pulls deals from the salon's store. Moved to the salon's own domain with the online store and email kept working.</p>
         <ul class="chips"><li>Redesign</li><li>Copywriting</li><li>Custom domain</li><li>Social card</li></ul>
       </article>
-      <article class="case" data-reveal>
+      <article class="case" id="momos" data-reveal>
         <a class="frame" href="https://mymomoscafe.com" target="_blank" rel="noopener">
           <span class="mock-bar"><span class="dots"><i></i><i></i><i></i></span><span class="mock-url">mymomoscafe.com</span></span>
           <img src="assets/work/momos-cafe.jpg" srcset="assets/work/momos-cafe-800.jpg 800w, assets/work/momos-cafe.jpg 1440w" sizes="(max-width: 900px) 92vw, 560px" width="1440" height="900" loading="lazy" alt="Homepage of Momo's Café: 'Still here. Still cooking.' with a photo of country fried steak and eggs">
@@ -116,7 +117,7 @@
         <p>A new site for a family-owned café: the full menu with photos and prices, catering and merch pages, and an “Open now” badge that follows real hours. Launched on its own domain with Search Console and Analytics.</p>
         <ul class="chips"><li>New website</li><li>Menu with photos</li><li>SEO setup</li><li>Analytics</li></ul>
       </article>
-      <article class="case sm" data-reveal>
+      <article class="case sm" id="primeline" data-reveal>
         <a class="frame" href="https://primelinepc.com" target="_blank" rel="noopener">
           <span class="mock-bar"><span class="dots"><i></i><i></i><i></i></span><span class="mock-url">primelinepc.com</span></span>
           <img src="assets/work/primeline-800.jpg" width="800" height="500" loading="lazy" alt="Homepage of PrimeLine Painting &amp; Coatings: 'Painting with precision. Finishes that last.' over a painted home">
@@ -126,7 +127,7 @@
         <p>Moved off Wix to a site the business controls: six service pages, real Google reviews, and an estimate form that lands in the owner's inbox. Company email kept working through the switch.</p>
         <ul class="chips"><li>Wix migration</li><li>Service pages</li><li>Lead form</li></ul>
       </article>
-      <article class="case sm" data-reveal>
+      <article class="case sm" id="jxr" data-reveal>
         <a class="frame" href="https://jxrconstructors.com" target="_blank" rel="noopener">
           <span class="mock-bar"><span class="dots"><i></i><i></i><i></i></span><span class="mock-url">jxrconstructors.com</span></span>
           <img src="assets/work/jxr-800.jpg" width="800" height="500" loading="lazy" alt="Homepage of JXR Constructors: 'Veteran-Owned. Precision-Built. Excellence Delivered.' over the company headquarters">
@@ -136,7 +137,7 @@
         <p>A redesign for a veteran-owned federal and commercial builder: projects, testimonials, certification badges, and a merch shop with a Shopify buy button.</p>
         <ul class="chips"><li>Redesign</li><li>Projects</li><li>Shopify</li></ul>
       </article>
-      <article class="case sm" data-reveal>
+      <article class="case sm" id="los-freseros" data-reveal>
         <a class="frame" href="https://paleterialosfreseros.com" target="_blank" rel="noopener">
           <span class="mock-bar"><span class="dots"><i></i><i></i><i></i></span><span class="mock-url">paleterialosfreseros.com</span></span>
           <img src="assets/work/los-freseros-800.jpg" width="800" height="500" loading="lazy" alt="Homepage of Paletería Los Freseros: the shop name over a spread of Mexican snacks and treats">
@@ -153,8 +154,8 @@
 <section class="section" id="process">
   <div class="wrap">
     <div class="sec-head" data-reveal>
-      <p class="label">How it works</p>
-      <h2 class="h2">Four steps, <em>no surprises.</em></h2>
+      <div class="sec-top"><a class="path" href="#process"><span class="dom">arconsultingwebsites.com</span><b>/</b>process</a></div>
+      <h2 class="h2">Nothing goes live until you say so.</h2>
     </div>
     <ol class="steps">
       <li data-reveal><span class="num">01</span><h3>Talk</h3><p>We go over your business and goals. I review what you have now: your site, Google listing, and social pages.</p></li>
@@ -166,10 +167,11 @@
 </section>
 
 <section class="section" id="about">
-  <div class="wrap about">
+  <div class="wrap">
+    <div class="sec-top" data-reveal><a class="path" href="#about"><span class="dom">arconsultingwebsites.com</span><b>/</b>about</a></div>
+    <div class="about">
     <div data-reveal>
-      <p class="label">About</p>
-      <h2 class="h2">Hi, I'm <em>Alfredo.</em></h2>
+      <h2 class="h2">Hi, I'm Alfredo.</h2>
     </div>
     <div class="about-body" data-reveal>
       <p class="big">A.R. Consulting is my business. I help businesses build their websites, and then help those websites bring in customers.</p>
@@ -181,14 +183,16 @@
         <div><dt>Email</dt><dd><a href="mailto:aram831@gmail.com">aram831@gmail.com</a></dd></div>
       </dl>
     </div>
+    </div>
   </div>
 </section>
 
 <section class="section alt" id="faq">
-  <div class="wrap faq-wrap">
+  <div class="wrap">
+    <div class="sec-top" data-reveal><a class="path" href="#faq"><span class="dom">arconsultingwebsites.com</span><b>/</b>faq</a></div>
+    <div class="faq-wrap">
     <div data-reveal>
-      <p class="label">FAQ</p>
-      <h2 class="h2">Good <em>questions.</em></h2>
+      <h2 class="h2">Before you email me.</h2>
     </div>
     <div class="faq" data-reveal>
       <details><summary>What kinds of businesses do you work with?</summary><p>Any business that needs customers to find it and trust it online. So far that includes a café, a paletería, a salon and spa, a painting contractor, and a general contractor.</p></details>
@@ -197,15 +201,17 @@
       <details><summary>How long does a new website take?</summary><p>A small business site usually takes a few weeks. Bigger sites with many pages or a store take longer. You'll get a timeline before we start.</p></details>
       <details><summary>What do you need from me?</summary><p>A conversation at the start, plus whatever you have: photos, menu or services, prices, hours. After that, mostly your feedback on the preview.</p></details>
     </div>
+    </div>
   </div>
 </section>
 
 <section class="contact" id="contact">
-  <div class="wrap contact-grid">
+  <div class="wrap">
+    <div class="sec-top" data-reveal><a class="path" href="#contact"><span class="dom">arconsultingwebsites.com</span><b>/</b>contact</a></div>
+    <div class="contact-grid">
     <div data-reveal>
-      <p class="label">Contact</p>
-      <h2 class="h2 xl">Let's build <em>yours.</em></h2>
-      <p class="sub">Tell me about your business and what you need. A few sentences is plenty.</p>
+      <h2 class="h2 xl">Tell me about your business.</h2>
+      <p class="sub">What you do, what you need, and the site you have now, if any. A few sentences is plenty.</p>
       <div class="email-row">
         <a class="email" href="mailto:aram831@gmail.com?subject=Website%20project">aram831@gmail.com</a>
         <button class="copy" type="button" data-copy="aram831@gmail.com">Copy</button>
@@ -218,6 +224,7 @@
       1171 Legion Avenue<br>
       Napa, CA 94559
     </address>
+    </div>
   </div>
   <footer class="wrap foot">
     <span>© <span data-year>2026</span> A.R. Consulting · Alfredo Ramirez</span>
