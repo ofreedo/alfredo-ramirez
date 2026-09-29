@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Social card template</title>
+<!-- Source for assets/og-image.jpg (?home) and assets/og-hospitality.jpg (?hosp). Re-render: bash _build/og.sh -->
+<link rel="stylesheet" href="../css/style.css?v=4">
+<style>
+  html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:var(--paper)}
+  .og{width:1200px;height:630px;padding:64px 80px 56px;display:flex;flex-direction:column}
+  .og .sec-top{margin:0 0 34px}
+  .og .path{font-size:20px;padding:12px 20px}
+  .og .path svg{width:16px;height:16px}
+  .og .headline{font-size:82px;max-width:none;flex:1}
+  .og .byline{display:flex;align-items:center;justify-content:space-between;font:700 24px/1 var(--sans);color:var(--ink-2);border-top:1px solid var(--rule);padding-top:28px}
+  .og .byline > span{display:flex;align-items:center;gap:16px}
+  .og .mono{width:52px;height:52px;font-size:17px}
+  .og .chanrow{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 28px;padding:0}
+  .og .chanrow li{list-style:none;background:#fff;border:1px solid var(--rule);border-radius:999px;padding:12px 20px;font:700 22px/1 var(--sans)}
+  .og .chanrow li.hub{background:var(--ink);color:var(--paper);border-color:var(--ink);font:800 24px/1 var(--serif)}
+  [hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="og" id="home">
+  <div class="sec-top"><span class="path"><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="5.5" width="7" height="5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg>arconsultingwebsites.com</span></div>
+  <h1 class="headline">Websites for <a>cafés</a>, <a>spas</a>, <a>painters</a>, <a>contractors</a>, and <a>paleterías</a>.</h1>
+  <div class="byline"><span><span class="mono">A.R.</span>Alfredo Ramirez · A.R. Consulting</span><span>Napa, California</span></div>
+</div>
+<div class="og" id="hosp" hidden>
+  <div class="sec-top"><span class="path"><span class="dom">arconsultingwebsites.com</span><b>/</b>hospitality</span></div>
+  <h1 class="headline" style="flex:0 0 auto;margin-bottom:40px">One calendar for every booking site.</h1>
+  <ul class="chanrow"><li>Airbnb</li><li>Booking.com</li><li>Expedia</li><li>Hipcamp</li><li class="hub">Cloudbeds</li></ul>
+  <div class="byline" style="margin-top:auto"><span><span class="mono">A.R.</span>Cloudbeds setup · A.R. Consulting</span><span>Napa, California</span></div>
+</div>
+<script>
+  if (location.search.indexOf('hosp') > -1) { document.getElementById('home').hidden = true; document.getElementById('hosp').hidden = false; }
+</script>
+</body>
+</html>
