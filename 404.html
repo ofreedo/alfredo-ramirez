@@ -14,22 +14,34 @@
     if (map[key]) location.replace('/#' + map[key]);
   })();
 </script>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/style.css?v=4">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/style.css?v=6">
 </head>
 <body>
-<header class="top wrap">
-  <a class="brand" href="/"><span class="mono">A.R.</span><span class="brand-name">A.R. Consulting</span></a>
-  <nav class="nav" aria-label="Main">
-    <a href="/#services">Services</a><a href="/#work">Work</a><a href="/hospitality/">Hospitality</a><a href="/#faq">FAQ</a>
-    <a class="btn-sm" href="/#contact">Contact</a>
-  </nav>
+<header class="bar" id="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="/"><span class="mono">A.R.</span><span class="brand-name">A.R. Consulting</span></a>
+    <a class="where" href="/"><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="5.5" width="7" height="5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg><span class="where-dom">arconsultingwebsites.com</span><b>/</b><span id="nf-path"></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#services">Services</a><a href="/#work">Work</a><a href="/hospitality/">Hospitality</a><a href="/#faq">FAQ</a>
+      <a class="btn-sm" href="/#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
 </header>
-<main class="wrap nf">
-  <div class="sec-top"><span class="path"><span class="dom">arconsultingwebsites.com</span><b>/</b><span id="nf-path"></span></span></div>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="/#services">Services</a><a href="/#work">Work</a><a href="/hospitality/">Hospitality</a><a href="/#faq">FAQ</a><a class="menu-cta" href="/#contact">Contact</a>
+  </nav>
+  <p class="menu-mail"><a href="mailto:arconsultingwebsites@gmail.com">arconsultingwebsites@gmail.com</a></p>
+</div>
+<main class="wrap nf" id="main">
   <h1 class="h2">There's no page at this address.</h1>
   <p class="sub">Try the <a href="/">homepage</a>, <a href="/#work">recent work</a>, or <a href="/hospitality/">booking systems for lodging</a>.</p>
 </main>
-<script>document.getElementById('nf-path').textContent = decodeURIComponent(location.pathname.replace(/^\//, '')).slice(0, 60);</script>
+<script>document.getElementById('nf-path').textContent = decodeURIComponent(location.pathname.replace(/^\//, '')).slice(0, 40);</script>
+<script src="/js/main.js?v=3" defer></script>
 </body>
 </html>
