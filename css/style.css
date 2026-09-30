@@ -196,6 +196,11 @@ a.path:hover{border-color:var(--ink)}
 .hero-photo img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:18px;box-shadow:0 30px 60px -30px rgba(40,30,15,.35)}
 .photo-tag{position:absolute;right:14px;bottom:14px;max-width:calc(100% - 28px);background:rgba(22,23,27,.88);color:var(--paper);border-radius:12px;padding:10px 14px;font-size:14px;line-height:1.35}
 .photo-tag strong{display:block;font:800 17px/1.2 var(--serif);margin-bottom:2px}
+/* homepage hero: Alfredo's portrait beside the headline (narrower column so the headline keeps its size) */
+.hero-split.home{grid-template-columns:1.35fr .65fr}
+.hero-split.home .headline{font-size:clamp(40px,5.6vw,80px);max-width:16ch}
+.hero-photo.portrait img{aspect-ratio:4/5;object-position:50% 35%}
+.hero-photo.portrait .photo-tag{left:14px;right:auto}
 .who{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,40px);border-top:1px solid var(--ink);padding-top:24px;margin-top:clamp(40px,6vw,72px)}
 .who h3{font:800 21px/1.2 var(--serif);margin:0 0 6px}
 .who p{margin:0;color:var(--ink-2);font-size:16px;line-height:1.5}
@@ -229,6 +234,8 @@ a.path:hover{border-color:var(--ink)}
 .facts div{padding:16px 0;border-bottom:1px solid var(--rule)}
 .facts dt{font:700 13px/1.2 var(--sans);color:var(--muted);margin-bottom:6px}
 .facts dd{margin:0}
+.facts div:last-child:nth-child(odd){grid-column:1/-1}
+.about-body .fine{margin:18px 0 0}
 
 /* faq */
 .faq-wrap{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px)}
@@ -269,8 +276,9 @@ address strong{display:block;color:var(--paper);font:800 24px/1.2 var(--serif);m
 .js [data-reveal].in{opacity:1;transform:none}
 
 @media (max-width:900px){
-  .split,.about,.faq-wrap,.contact-grid,.hosp,.teaser,.ba,.hero-split,.story,.roles{grid-template-columns:1fr}
+  .split,.about,.faq-wrap,.contact-grid,.hosp,.teaser,.ba,.hero-split,.hero-split.home,.story,.roles{grid-template-columns:1fr}
   .who{grid-template-columns:1fr 1fr}
+  .hero-photo.portrait{max-width:380px}
   .cases{grid-template-columns:1fr 1fr}
   .case,.case.sm{grid-column:auto}
   .case:first-child{grid-column:1/-1}

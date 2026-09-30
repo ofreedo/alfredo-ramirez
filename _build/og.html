@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Social card template</title>
 <!-- Source for assets/og-image.jpg (?home) and assets/og-hospitality.jpg (?hosp). Re-render: bash _build/og.sh -->
-<link rel="stylesheet" href="../css/style.css?v=5">
+<link rel="stylesheet" href="../css/style.css?v=7">
 <style>
   html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:var(--paper)}
   .og{width:1200px;height:630px;padding:64px 80px 56px;display:flex;flex-direction:column}
@@ -19,6 +19,9 @@
   .og-split .sec-top{margin-bottom:28px}
   .og-split .headline{font-size:66px;flex:none;margin:0 0 30px}
   .og-photo{width:100%;height:392px;object-fit:cover;object-position:28% center;border-radius:18px}
+  .og-split.home{grid-template-columns:1.4fr .6fr}
+  .og-split.home .headline{font-size:62px}
+  .og-portrait{object-position:50% 35%}
   .og .chanrow{display:flex;gap:10px;flex-wrap:wrap;margin:0;padding:0}
   .og .chanrow li{list-style:none;background:#fff;border:1px solid var(--rule);border-radius:999px;padding:10px 16px;font:700 19px/1 var(--sans)}
   .og .chanrow li.hub{background:var(--ink);color:var(--paper);border-color:var(--ink);font:800 21px/1 var(--serif)}
@@ -27,8 +30,13 @@
 </head>
 <body>
 <div class="og" id="home">
-  <div class="sec-top"><span class="path"><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="5.5" width="7" height="5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg>arconsultingwebsites.com</span></div>
-  <h1 class="headline">Websites for <a>cafés</a>, <a>spas</a>, <a>painters</a>, <a>contractors</a>, and <a>paleterías</a>.</h1>
+  <div class="og-split home">
+    <div>
+      <div class="sec-top"><span class="path"><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2.5" y="5.5" width="7" height="5" rx="1"/><path d="M4 5.5V4a2 2 0 0 1 4 0v1.5"/></svg>arconsultingwebsites.com</span></div>
+      <h1 class="headline">Websites for <a>cafés</a>, <a>spas</a>, <a>painters</a>, <a>contractors</a>, and <a>paleterías</a>.</h1>
+    </div>
+    <img class="og-photo og-portrait" src="../assets/alfredo-ramirez-v2-1000.jpg" alt="">
+  </div>
   <div class="byline"><span><span class="mono">A.R.</span>Alfredo Ramirez · A.R. Consulting</span><span>Napa, California</span></div>
 </div>
 <div class="og" id="hosp" hidden>
